@@ -36,8 +36,8 @@ app = Flask(__name__)
 mail = Mail(app)
 load_dotenv()
 
-app.secret_key = 'MYSECRETKEY'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
+app.secret_key = os.getenv('SECRET_KEY', 'MYSECRETKEY')
+app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL', 'sqlite:///database.db')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['MAIL_SERVER'] = os.getenv('MAIL_SERVER')
 app.config['MAIL_PORT'] = int(os.getenv('MAIL_PORT') or 465)
@@ -559,11 +559,7 @@ def cataract():
     return render_template('index.html')
 
 
-
-
-
-    app.run(debug=True)
-
 if __name__ == '__main__':
     create_tables()
-    app.run(debug=True)
+    port = int(os.getenv('PORT', 5000))
+    app.run(host='0.0.0.0', port=port, debug=False)
