@@ -9,6 +9,16 @@ HMS is a web application developed using Flask, a web framework in Python that a
 
 HMS is a Flask-based web app that lets patients register, book appointments, and track diagnoses while doctors manage their schedules and send prescriptions. A symptom-based ML model (Decision Tree) provides quick disease predictions from the built-in dataset.
 
+## Problem Statement
+
+Access to timely, organized, and personalized healthcare remains a major challenge, especially in regions where medical resources are fragmented and overloaded. Patients often struggle with scattered health information, delayed appointments, lack of early disease awareness, and minimal mental health support. On the other side, doctors face inefficient appointment management, poor patient history visibility, and limited digital tools to streamline diagnosis and follow-ups.
+
+Existing healthcare platforms are either too complex, expensive, or narrowly focused, failing to provide an integrated solution that connects patients, doctors, diagnostics, and awareness in one place. Early-stage symptom neglect and mental health conditions often go unnoticed due to the absence of accessible, intelligent screening tools.
+
+There is a strong need for a unified, lightweight, and intelligent health management system that enables patients to easily book appointments, track their health journey, receive preliminary disease insights, and access reliable medical content—while empowering doctors with efficient scheduling, patient data management, and digital prescription support.
+
+This problem calls for an affordable, scalable, and technology-driven solution that bridges the gap between patients and healthcare providers, improves early detection, and promotes proactive healthcare management through data, automation, and machine learning.
+
 ## Features
 
 - Patient and doctor registration/login with separate dashboards
